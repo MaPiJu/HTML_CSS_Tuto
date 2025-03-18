@@ -1,0 +1,276 @@
+/* l'astérisque sert pour tout le monde */
+* {
+    /* box-sizing sert à créer quelle type de box on veut */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #0f172a;
+}
+
+body {
+    font-size: 0.9rem;
+    /* flex sert à horizontaliser */
+    display: flex;
+    /* on range en colonne */
+    flex-direction: column;
+    /* ici min-height correspond à la hauteur minimum utilisée par le body
+    dans notre cas, 100vh signifie 100 pourcent de verticalHeight */
+    min-height: 100vh;
+}
+
+/* THESE ARE ADDED POST COURSE! */
+main,
+header,
+footer > div {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* JUST THESE LINES ABOVE */
+
+button {
+    cursor: pointer;
+}
+
+.google-header {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ici on indique la disposition des headers afin qu'ils ne soient plus en
+file indienne
+displax -> met en horizontale
+align-items -> ici il maintient les 2 élements sur le meme niveau
+justify-content -> met un espace entre les 2 éléments des headers
+padding -> Sert à pousser les 2 éléments
+gap -> pousse les 2 éléments d'entre eux
+
+"rem" correspond à une position relative
+*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* Ici "flex" sert à horizontaizer et gap à séparer les éléments*/
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.text-link,
+footer a {
+    color: inherit;
+    /*  ci-dessous sert à enlver le sous-lignage */
+    text-decoration: none;
+}
+
+/* ici le ":hover" sert à avoir le sous-lignage lorsque l'on passe la souris
+sur le texte */
+.text-link:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* nav-container-second  est une deuxième classe créée pour Gmail et Images
+afin de les faire disparaitre si l'écran est petit
+EN EFFET ON MET PAR DEFAUT NONE, puis en bas dans @media, si la largeur minimale
+de 640px est atteinte on l'affiche, voir détail en bas*/
+.nav-container-second .text-link {
+    display: none;
+}
+
+/* Modiffication des icones */
+.icon-link {
+    font-size: 1rem;
+    color: inherit;
+    /*  enlargissement de la boite de l'icone */
+    width: 30px;
+    /* sert à avoir une largeur egale a la hauteur */
+    aspect-ratio: 1 / 1;
+    /* sert à avoir une ombre lorsque l'on passe la souris sur l'icone */
+    overflow: hidden;
+    /* arrondi de la boite de l'icone */
+    border-radius: 100%;
+    /* changemennt du display en grid pour pouvoir centrer ensuite */
+    display: grid;
+    /* Centrage de l'icone */
+    place-items: center;
+}
+
+.icon-link:hover {
+    background: rgb(235, 235, 235);
+}
+
+/* On moudifie ici le Boutton où l'image de l'utilisateur est située */
+.img-button {
+    border: none;
+    background: transparent;
+}
+/* Ici on modifie l'image dans le bouton */
+.img-button img {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+}
+
+/* Modification de la police du titre h1 */
+.title-text {
+    font-size: 3rem;
+}
+
+.input-bar {
+    display: flex;
+    align-items: center;
+    /* gap avec l'extérieur */
+    gap: 1rem;
+    width: 100%;
+    /* largeur maximale */
+    max-width: 500px;
+    border: 1px solid rgb(235, 235, 235);
+    /* padding pour l'extérieur */
+    padding: 1rem;
+    /* arrondi externes */
+    border-radius: 1rem;
+}
+
+/* ajout de l'effet ombre à la barre de recherche et aussi au focus càd 
+gardé l'ombre après avoir ciqué sur la barre de recherche
+  */
+.input-bar:hover,
+.input-bar:focus-within {
+    box-shadow: 0 0 4px 1px rgb(237, 237, 237);
+}
+
+/* Modification de la partie input de l'objet input bar */
+.input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.input-bar div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* on enleve les borders et met transparent le fond */
+.input-icon {
+    background: transparent;
+    border: none;
+}
+
+/* ajout transparence pour les classes icones */
+.input-icon:hover {
+    opacity: 0.6;
+}
+
+/* RAPPEL: flex signifie que le container sera flexible */
+.button-grid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* selectionn eles bouttons situés dans les button-grid */
+.button-grid button {
+    padding: 0.5rem 1rem;
+    /* Ici on met le border transparent afin de ne pas mettre deux fois la
+    couleur grise que l'on ajoute en dessous dans  ".button-grid button:hover "
+    DE PLUS, cela sert à ce que les boutons en bougent pas lorsque l'on passe
+    dessus*/
+    border: 1px solid transparent;
+    /* hello my name is james */
+    background: rgb(247, 247, 247);
+    border-radius: 0.25rem;
+}
+
+/* ajout de l'ombrage */
+.button-grid button:hover {
+    border: 1px solid slategray;
+}
+
+.language-text {
+    font-size: 0.7rem;
+}
+
+.language-link {
+    color: blue;
+    text-decoration: none;
+    /* ajout du curseur  */
+    cursor: pointer;
+}
+
+/* ajour effet sous-lignage */
+.language-link:hover {
+    text-decoration: underline;
+}
+
+/* couleur et taille de la police dans le footer */
+footer {
+    background: rgb(244, 244, 244);
+    font-size: 0.7rem;
+}
+
+/* padding dirigée directement sur le premier "div" ou
+premier enfant du footer */
+footer>div {
+    padding: 1rem;
+}
+
+/* alignement des grid du footer */
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+/*  */
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* on spécifie la taille minimum ici,
+@media permet d'appliquer des styles différents en fonction des c
+aractéristiques du dispositif, comme la largeur de l'écran, 
+l'orientation, la résolution, etc.*/
+@media (min-width: 640px) {
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .footer-grid {
+        display: flex;
+        /* on a une disposition en row si on a une largeur min de 640 */
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+
+    .nav-container-second .text-link {
+        display: block;
+    }
+}

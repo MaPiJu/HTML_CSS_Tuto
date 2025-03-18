@@ -1,0 +1,83 @@
+<!-- Ici si on appuie sur "!" alors VS crée les ligne du dessous automatiquement -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Ci-dessous -->
+
+<!-- Ci-dessous on spécifie l'encodage utf8, adaptation de l'affichage de l'écran pour l'utilisateur,
+ le fait qu'il y a un fichier css ainsi que le nom de ce dernier, enfin le titre ou nom de l'onglet-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cats Galore</title>
+</head>
+
+<!-- En général on divise le body en 3 morceaux: header/main/footer -->
+
+<!-- Ci-dessous on décris l'en tête du body (=header)-->
+<body>
+    <header>
+        <h1>Cats Website</h1>
+        <nav style="color: blue; background: yellow;">
+
+            <!-- Ci dessous le href="#footer" sert à créer un lien pour acceder au pied de la page -->
+            <a href="#footer">
+                <p>Footer</p>
+            </a>
+            <a href="https://www.google.com">
+                <p>Google</p>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+
+            <h2>Everything you should know about cats!</h2>
+
+            <p class="paragraph header">Cats are my favorite animal on the face of the earth and so I am creating this website to commemorate
+                their
+                brilliance.</p>
+
+        </section>
+        <!-- Création d'une nouvelle section de notre site-->
+        <section>
+            <div id="first-div">
+                <!-- Ci-dessous on ajoute une image en spécifiant sa taille, son lien et une description-->
+                <img style="width: 90%;"
+                    src="https://www.agria.fr/imagevault/publishedmedia/9vgy569fypmkernjg4x6/Orange_cat_laying_indoor.jpg"
+                    alt="cat-profile-img" />
+                
+                    <!-- Ci-dessous on crée un lien cliquable avec l'url -->
+                <a
+                    
+                    href="https://www.telegraph.co.uk/content/dam/family/2023/03/03/TELEMMGLPICT000327541473_trans_NvBQzQNjv4BqvJa3kyVuyYPSY0uDKmeq-UOT-g4wan1oLRw7F7Qae2c.jpeg">
+                    <p>Click here for more cat images</p> 
+            </div>
+            </a>
+            <!-- Ci-dessous on a une partie pour faire saisir des infos par l'utilisateur, donc au lieu d'utiliser div
+             on utilise form-->
+            <form>
+                <!-- Ci-dessous on crée une boxe pour faire entrer un texte par l'utilisateur -->
+                <label>
+                    <p>Cat breed</p>
+                    <input style="width: 240px" placeholder="Enter the name of your favorite cat breed..." />
+                </label>
+                <!-- Ci dessous on rentre un bouton Submit comme un bouton Enter -->
+                <button>
+                    <p>Submit</p>
+                </button>
+            </form>
+        </section>
+
+    </main>
+    <footer id="footer">
+        Copyright 2024
+    </footer>
+
+</body>
+
+</html>
+
+<!-- Ci-dessous -->
