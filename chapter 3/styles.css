@@ -28,27 +28,51 @@ body {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     min-height: 100vh;
-    margin: 0;
+
+    /* margin = espace extérieur autour d'un élément */
+    margin: 0; 
+
+    /* padding = espace intérieur entre le contenu d'un élément et ses bordures */
     padding: 0;
+
+    /* On met du gap dans le body pour pas que l'affichage ne soit trop large
+    et trop haut. 
+    Rappel "gap: 10px 30px;" avec 10px entre les lignes, 30px entre les colonnes */
+    gap: 4rem 2rem;
+
+
 }
 
 header{
-    max-width: 1024px;
-    margin: 0 auto;
-    
-    /* Supprimer les marges et paddings par défaut */
-    margin: 0; 
+    top: 0;
+    margin: 1rem;
     padding: 1rem; 
 }
 
 
 main{
-    width: 100%;
     max-width: 1024px;
-    margin: 0 auto;
-    
     /* Supprimer les marges et paddings par défaut */
-    margin: 0; 
+    margin: 1rem; 
     padding: 1rem; 
     
+}
+footer {
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.arrowtop{
+    max-width: 500px;
+    padding: 1rem;
+}
+
+@media(min-width:1024px){
+    body{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colonnes flexibles */
+    }
+    header{
+        position: sticky;
+    }
 }

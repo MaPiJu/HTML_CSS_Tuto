@@ -17,6 +17,11 @@ body {
     /* ici min-height correspond à la hauteur minimum utilisée par le body
     dans notre cas, 100vh signifie 100 pourcent de verticalHeight */
     min-height: 100vh;
+
+    /* On met du gap dans le body pour pas que l'affichage ne soit trop large
+    et trop haut. 
+    Rappel gap: 10px 30px; avec 10px entre les lignes, 30px entre les colonnes */
+    gap: 4rem 2rem;
 }
 
 /* THESE ARE ADDED POST COURSE! */
