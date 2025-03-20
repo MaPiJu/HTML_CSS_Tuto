@@ -15,46 +15,70 @@
 <body>
     <header>
         <!-- Première divisoin en haut à gauche -->
-        <div class="nav-container">
+        <div>
             <h1 id="top">
                 <a class="text-link" target="_blank" href="#" onclick="location.reload(); return false;">
                     <p>Marc Julio</p>
                 </a>
             </h1>
 
-            <h4>
+        </div>
+        <div>
+            <h4 class="sub-title">
                 <p>
                     Full Stack Developer
                 </p>
             </h4>
+        </div>
 
+        <div> 
             <p>
                 I build pixel-perfect, engaging, and<br/>
                 accessible digital experiences.
             </p>
+        </div>
 
-            <a href="#about">
+        <div class="index-title">
+            <a class="text-link" href="#about">
                 <p>About</p>
             </a>
 
-            <a href="#experience">
+            <a class="text-link" href="#experience">
                 <p>Experience</p>
             </a>
 
-            <a href="#projects">
+            <a class="text-link" href="#projects">
                 <p>Projects</p>
             </a>
-
         </div>
 
         <!-- div header en bas avec les logos -->
         <div class="socialmedia-container">
             <div class="logo">
-                <a target="_blank" href="https://www.linkedin.com/in/marc-julio-006969152/">
+                <a class="text-link" target="_blank" href="https://www.linkedin.com/in/marc-julio-006969152/">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-         </div>
+
+            <div class="logo">
+                <a class="text-link" target="_blank" href="https://github.com/MaPiJu">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="logo">
+                <a class="text-link" target="_blank" href="https://www.linkedin.com/in/marc-julio-006969152/">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+
+            <div class="logo">
+                <a class="text-link" target="_blank" href="https://www.strava.com/athletes/10473473">
+                    <i class="fa-brands fa-strava"></i>
+                </a>
+            </div>
+        </div>
+
 
 
 
@@ -62,6 +86,7 @@
     
     <main>
         <!-- div 1: About me -->
+         <h4 class="title-section"> <p> ABOUT </p> </h4>
          <div id="about">
             <p>
                 I have made the decision to learn myself to code in order to change
@@ -81,6 +106,7 @@
          </div>
 
         <!-- div 2: About my experience -->
+        <h4 class="title-section"> <p> EXPERIENCE</p> </h4>
          <div id="experience">
 
             <!-- Experience 1 -->
@@ -164,6 +190,7 @@
          </div>
 
         <!-- div 3: About my projects -->
+        <h4 class="title-section"> <p> PROJECTS</p> </h4>
         <div id="projects">
 
 
@@ -257,7 +284,7 @@
     </footer>
     <!-- div 4: Boutton jusqu'au top -->
      <div class="arrowtop">
-        <a class="top-arrow-icon" href="#top">
+        <a class="text-link top-arrow-icon" href="#top">
             <i class="fa-solid fa-arrow-up"></i>
         </a>
      </div>
