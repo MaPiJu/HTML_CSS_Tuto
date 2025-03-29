@@ -17,11 +17,6 @@ body {
     /* ici min-height correspond à la hauteur minimum utilisée par le body
     dans notre cas, 100vh signifie 100 pourcent de verticalHeight */
     min-height: 100vh;
-
-    /* On met du gap dans le body pour pas que l'affichage ne soit trop large
-    et trop haut. 
-    Rappel gap: 10px 30px; avec 10px entre les lignes, 30px entre les colonnes */
-    gap: 4rem 2rem;
 }
 
 /* THESE ARE ADDED POST COURSE! */
@@ -112,7 +107,7 @@ de 640px est atteinte on l'affiche, voir détail en bas*/
     background: rgb(235, 235, 235);
 }
 
-/* On moudifie ici le Boutton où l'image de l'utilisateur est située */
+/* On modifie ici le Boutton où l'image de l'utilisateur est située */
 .img-button {
     border: none;
     background: transparent;
@@ -156,7 +151,7 @@ main {
 }
 
 /* ajout de l'effet ombre à la barre de recherche et aussi au focus càd 
-gardé l'ombre après avoir ciqué sur la barre de recherche
+garde l'ombre après avoir cliqué sur la barre de recherche
   */
 .input-bar:hover,
 .input-bar:focus-within {
