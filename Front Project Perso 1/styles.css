@@ -1,0 +1,23 @@
+/* use of variable for colors in css afin de ne pas réutiliser tous le temps la valeur*/
+:root {
+    /* always with "--nom-nom2" */
+    --color-accent: #5eead4;
+    --background-accent: rgba(45, 212, 191, .1);
+    --color-highlight: #e2e8f0;
+}
+
+html {
+    /* met le scroll en smooth */
+    scroll-behavior: smooth;
+}
+
+/* star is used for ALL TAGS */
+* {
+    /* ➡️ La taille totale reste 200px
+       ➡️ Le padding et la bordure sont inclus dans les 200px */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* premier est le style que l'on veut et le second le style en backup */
+    font-family: 'Space Grotesk', sans-serif;
+}
