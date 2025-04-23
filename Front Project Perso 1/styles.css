@@ -21,3 +21,8 @@ html {
     /* premier est le style que l'on veut et le second le style en backup */
     font-family: 'Space Grotesk', sans-serif;
 }
+
+body {
+    background: #0f172a;
+    color: #94a3b8;
+}
