@@ -494,11 +494,11 @@ footer p {
     header,
     main {
         padding-top: 6rem;
-/* sert à ne pas enlargir de trop les colononnes lorsque l'on zoom-out */
+/* sert à ne pas enlargir de trop les colonnes lorsque l'on zoom-out */
         max-width: 700px;
         width: 100%;
     }
-/* sert à ne pas enlargir de trop les colononnes lorsque l'on zoom-out */
+/* sert à ne pas enlargir de trop les colonnes lorsque l'on zoom-out */
     main {
         margin-right: auto;
     }

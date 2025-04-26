@@ -20,9 +20,26 @@ html {
     padding: 0;
     /* premier est le style que l'on veut et le second le style en backup */
     font-family: 'Space Grotesk', sans-serif;
+    border: 1px solid white;
 }
 
 body {
     background: #0f172a;
     color: #94a3b8;
+}
+
+
+.graphic-container {
+    max-width: 200px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    display: grid;
+    place-items: center;
+}
+
+.graphic-container img {
+    /* Sert à s'assurer que l'image couvre toujours le container */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
