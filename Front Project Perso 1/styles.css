@@ -28,6 +28,38 @@ body {
     color: #94a3b8;
 }
 
+header,
+main,
+footer {
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Crée de l'espace entre les éléments */
+    gap: 1rem;
+    /* max idth of header container */
+    max-width: 100%;
+}
+
+.tab-nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.tab-nav p {
+    margin: 0; /* Enlève les marges par défaut du <p> */
+}
+
+
+.social-link-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 .graphic-container {
     max-width: 200px;
@@ -35,6 +67,9 @@ body {
     aspect-ratio: 16 / 9;
     display: grid;
     place-items: center;
+
+    width: 100%; /* S'assure que le conteneur prend toute la largeur disponible */
+    height: auto;           /* Laissez la hauteur s'ajuster à l'aspect-ratio */
 }
 
 .graphic-container img {
