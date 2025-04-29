@@ -1,0 +1,31 @@
+🎨 Design & UI
+✅ Menu déroulant responsive (tu l’as déjà commencé)
+✅ Navigation sticky (reste en haut lors du scroll)
+✅ Dark / Light mode toggle
+✅ Loader animé pendant le chargement
+✅ Animations de scroll (entrées douces avec @keyframes ou scroll-behavior)
+✅ Cards avec hover effet pour afficher des infos supplémentaires
+✅ Carousel d’images (slide automatique ou manuel)
+✅ Grille responsive avec CSS Grid ou Flexbox
+✅ Timeline verticale ou horizontale pour afficher l'historique des trades
+✅ Modale (popup) qui s’ouvre au clic
+📊 Contenu dynamique & données
+✅ Barre de progression (ex : P&L ou performance du bot)
+✅ Graphique intégré (via une image ou une vraie lib JS comme Chart.js)
+✅ Compteur animé (ex : nombre de trades exécutés)
+✅ Tableau de données responsive (ex : logs ou historique des trades)
+✅ Filtres par date / période dans la section “Past Trades”
+
+📱 Responsive / Accessibilité
+✅ Design responsive (mobile/tablette/desktop)
+✅ Accessibilité : balises aria, contrastes suffisants
+✅ Favicon personnalisé
+✅ Utilisation correcte des balises sémantiques : <section>, <article>, <footer>, etc.
+
+📬 Fonctionnalités bonus
+✅ Formulaire de contact fictif
+✅ Système de notifications (ex : "Trade terminé")
+✅ Affichage de l’heure / date en temps réel
+✅ Intégration d’un mini terminal en ligne de commande (pour le fun)
+✅ Intégration d'une section FAQ ou tutoriel interactif
+✅ Ajout d’un bouton “Retour en haut” qui apparaît au scroll
