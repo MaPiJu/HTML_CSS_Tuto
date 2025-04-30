@@ -2,7 +2,7 @@
 :root {
     /* always with "--nom-nom2" */
     --color-accent: #5eead4;
-    --background-accent: rgba(45, 212, 191, .1);
+    --background-accent:0f172a;
     --color-highlight: #e2e8f0;
     --color-hyperliquidtheme: rgb(80, 210, 193);
 }
@@ -81,6 +81,37 @@ header {
     height: 100%;
 }
 
+/* Conteneur du menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Bouton visible */
+.dropbtn {
+    background-color: var(--background-accent);
+    color: #94a3b8;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
 .dropdown-content{
-    display: grid;
+    display: none;
+}
+
+/* Liens du menu */
+.dropdown-content a {
+    color: #94a3b8;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    display: flex;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
